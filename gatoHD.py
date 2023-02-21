@@ -105,8 +105,14 @@ def play_game():
             board[position] = "X"
             turn = "cpu"
         else:
-            # Turno de la CPU
+             # Turno de la CPU
             print("Turno de la CPU (O)")
             position = get_best_move(board)
             board[position] = "O"
             turn = "player"
+
+
+# Función principal
+if __name__ == '__main__':
+    print("¡Bienvenido al juego del gato!")
+    play_game()
